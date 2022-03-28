@@ -1,0 +1,16 @@
+aws_eip -> amazon elastic ip means , assigning a static ip to an instance. below is the example code - 
+
+resource "aws_eip" "prod_web"{
+  instance = aws_instance.prod_web.id
+  tags = {
+    "Terraform" = "True"
+  }
+}
+
+get ready for scale
+
+aws_eip_assocoation
+
+Splot out you data ( Variables conacept )
+
+
