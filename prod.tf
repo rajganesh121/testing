@@ -25,6 +25,12 @@ provider "aws" {
 
 resource "aws_s3_bucket" "prod_tf_course" {
   bucket = "tf-course-202203200833"
+
+  tags = {
+    Name        = "My bucket"
+    Environment = "Dev"
+  }
+  
 }
 
 resource "aws_s3_bucket" "prod_tf_course1" {
