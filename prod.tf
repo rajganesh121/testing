@@ -32,7 +32,7 @@ resource "aws_s3_bucket" "prod_tf_course" {
 }
 
 output "s3_name" {
-  value = aws_s3_bucket.prod_tf_course.bucket
+  value = aws_s3_bucket.prod_tf_course.tags
 }
 
 # resource "aws_s3_bucket" "prod_tf_course1" {
