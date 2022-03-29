@@ -27,6 +27,10 @@ resource "aws_s3_bucket" "prod_tf_course" {
   bucket = "tf-course-202203200833"
 }
 
+resource "aws_s3_bucket" "prod_tf_course1" {
+  bucket = "tf-course-202203200833"
+}
+
 # resource "aws_default_vpc" "default" {}
 
 # resource "aws_security_group" "prod_web"{
