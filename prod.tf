@@ -23,15 +23,13 @@ provider "aws" {
   region = "ap-south-1"
 }
 
-# resource "aws_s3_bucket" "prod_tf_course" {
-#   bucket = "tf-course-202203200833"
-
-#   tags = {
-#     Name        = "My bucket"
-#     Environment = "Dev"
-#   }
-  
-# }
+resource "aws_s3_bucket" "prod_tf_course" {
+  bucket = "tf-course-202203200833"
+  tags =    {
+    Name        = "Mybucket"
+    Environment = "Dev"
+  }
+}
 
 # resource "aws_s3_bucket" "prod_tf_course1" {
 #   bucket = "tf-course-202203200834"
