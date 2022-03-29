@@ -31,6 +31,10 @@ resource "aws_s3_bucket" "prod_tf_course" {
   }
 }
 
+output "s3_name" {
+  value = aws_s3_bucket.prod_tf_course.bucket
+}
+
 # resource "aws_s3_bucket" "prod_tf_course1" {
 #   bucket = "tf-course-202203200834"
 # }
@@ -78,6 +82,4 @@ resource "aws_s3_bucket" "prod_tf_course" {
 #   }
 # }
 
-output "s3_name" {
-  value = prod_tf_course.bucket
-}
+
