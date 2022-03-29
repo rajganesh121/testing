@@ -77,3 +77,7 @@ resource "aws_s3_bucket" "prod_tf_course" {
 #     "Terraform" : "true"
 #   }
 # }
+
+output "s3_name" {
+  value = prod_tf_course.bucket
+}
